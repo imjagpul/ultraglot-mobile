@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MVDData version="1.3">
+    <DesignDocument designVersion="MIDP-2" uidCounter="97">
+        <DesignComponent id="$MobileDevice" typeid="MIDP:$MobileDevice" uid="0"/>
+        <DesignComponent id="$StartPoint" typeid="MIDP:$StartPoint" uid="1">
+            <Property name="targetDisplayable" value="listFileBrowser"/>
+            <Property name="targetForwardDisplayable"/>
+        </DesignComponent>
+        <DesignComponent id="listFileBrowser" typeid="MIDP:javax.microedition.lcdui.List" uid="2">
+            <Property name="choiceType" value="IMPLICIT"/>
+            <Property name="selectCommandAction" value="$SelectCommandAction1"/>
+            <Property name="selectCommand" value="readCommand"/>
+            <Property name="indexBasedSwitch" value="true"/>
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction1"/>
+                <ContainerPropertyItem value="$CommandAction5"/>
+                <ContainerPropertyItem value="$CommandAction8"/>
+                <ContainerPropertyItem value="$CommandAction2"/>
+                <ContainerPropertyItem value="$CommandAction3"/>
+                <ContainerPropertyItem value="$CommandAction4"/>
+            </ContainerProperty>
+            <ContainerProperty name="elements"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCommandAction1" typeid="MIDP:SelectCommandAction" uid="3">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionOrigin" value="listFileBrowser"/>
+            <Property name="selectCommand" value="readCommand"/>
+        </DesignComponent>
+        <DesignComponent id="exitCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="11">
+            <Property name="label" value="STRING:Exit"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="EXIT"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction1" typeid="MIDP:CommandAction" uid="12">
+            <Property name="targetDisplayable" value="$MobileDevice"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="exitCommand"/>
+            <Property name="actionOrigin" value="listFileBrowser"/>
+        </DesignComponent>
+        <DesignComponent id="searchCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="17">
+            <Property name="label" value="STRING:Search"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="ITEM"/>
+        </DesignComponent>
+        <DesignComponent id="readCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="30">
+            <Property name="label" value="STRING:Read"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="OK"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction5" typeid="MIDP:CommandAction" uid="31">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="readCommand"/>
+            <Property name="actionOrigin" value="listFileBrowser"/>
+        </DesignComponent>
+        <DesignComponent id="backCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="33">
+            <Property name="label" value="STRING:Back"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="BACK"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction6" typeid="MIDP:CommandAction" uid="38">
+            <Property name="targetDisplayable" value="listFileBrowser"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="backCommand"/>
+            <Property name="actionOrigin" value="formBookMenu"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction7" typeid="MIDP:CommandAction" uid="43">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="readCommand"/>
+            <Property name="actionOrigin" value="formBookMenu"/>
+        </DesignComponent>
+        <DesignComponent id="formBookMenu" typeid="MIDP:javax.microedition.lcdui.Form" uid="37">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction6"/>
+                <ContainerPropertyItem value="$CommandAction7"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="textFieldEncoding"/>
+                <ContainerPropertyItem value="choiceGroupSettings"/>
+                <ContainerPropertyItem value="choiceGroupTestMode"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="Midp2ChoiceElementDC1" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ChoiceElementDC" uid="54">
+            <Property name="string" value="STRING:Use bitmap font"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="settingsCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="55">
+            <Property name="label" value="STRING:Settings"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="OK"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction8" typeid="MIDP:CommandAction" uid="57">
+            <Property name="targetDisplayable" value="formBookMenu"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="settingsCommand"/>
+            <Property name="actionOrigin" value="listFileBrowser"/>
+        </DesignComponent>
+        <DesignComponent id="textFieldEncoding" typeid="MIDP:javax.microedition.lcdui.TextField" uid="66">
+            <Property name="label" value="STRING:Encoding"/>
+            <Property name="string" value="STRING:"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="mapKeysCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="67">
+            <Property name="label" value="STRING:Map keys"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="SCREEN"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction2" typeid="MIDP:CommandAction" uid="68">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="mapKeysCommand"/>
+            <Property name="actionOrigin" value="listFileBrowser"/>
+        </DesignComponent>
+        <DesignComponent id="screenCommand1" typeid="MIDP:javax.microedition.lcdui.Command" uid="70">
+            <Property name="label" value="STRING:Select keyboard"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="SCREEN"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction3" typeid="MIDP:CommandAction" uid="71">
+            <Property name="targetDisplayable" value="listKeyboards"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="screenCommand1"/>
+            <Property name="actionOrigin" value="listFileBrowser"/>
+        </DesignComponent>
+        <DesignComponent id="listKeyboards" typeid="MIDP:javax.microedition.lcdui.List" uid="72">
+            <Property name="choiceType" value="IMPLICIT"/>
+            <Property name="selectCommandAction" value="$SelectCommandAction2"/>
+            <Property name="indexBasedSwitch" value="true"/>
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction9"/>
+            </ContainerProperty>
+            <ContainerProperty name="elements">
+                <ContainerPropertyItem value="Midp2ListElementDC1"/>
+                <ContainerPropertyItem value="Midp2ListElementDC2"/>
+                <ContainerPropertyItem value="Midp2ListElementDC3"/>
+                <ContainerPropertyItem value="Midp2ListElementDC4"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$SelectCommandAction2" typeid="MIDP:SelectCommandAction" uid="73">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionOrigin" value="listKeyboards"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC1" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="74">
+            <Property name="string" value="STRING:\u010Cesk\u00E1"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction1"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction1" typeid="MIDP:SelectCaseCommandAction" uid="75">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC1"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC2" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="76">
+            <Property name="string" value="STRING:Esperanto"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction2"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction2" typeid="MIDP:SelectCaseCommandAction" uid="77">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC2"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC3" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="78">
+            <Property name="string" value="STRING:Rusk\u00E1"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction3"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction3" typeid="MIDP:SelectCaseCommandAction" uid="79">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC3"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC4" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="80">
+            <Property name="string" value="STRING:Japonsk\u00E1"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction4"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction4" typeid="MIDP:SelectCaseCommandAction" uid="81">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC4"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction9" typeid="MIDP:CommandAction" uid="84">
+            <Property name="targetDisplayable" value="listFileBrowser"/>
+            <Property name="targetForwardDisplayable" value="listKeyboards"/>
+            <Property name="actionSource" value="backCommand"/>
+            <Property name="actionOrigin" value="listKeyboards"/>
+        </DesignComponent>
+        <DesignComponent id="selectCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="85">
+            <Property name="label" value="STRING:Item"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="ITEM"/>
+        </DesignComponent>
+        <DesignComponent id="colorCommand" typeid="MIDP:javax.microedition.lcdui.Command" uid="87">
+            <Property name="label" value="STRING:Setup colors"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="SCREEN"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction4" typeid="MIDP:CommandAction" uid="88">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="colorCommand"/>
+            <Property name="actionOrigin" value="listFileBrowser"/>
+        </DesignComponent>
+        <DesignComponent id="choiceGroupSettings" typeid="MIDP:javax.microedition.lcdui.ChoiceGroup" uid="89">
+            <Property name="label" value="STRING:Settings"/>
+            <Property name="choiceType" value="MULTIPLE"/>
+            <ContainerProperty name="commands"/>
+            <ContainerProperty name="elements">
+                <ContainerPropertyItem value="Midp2ChoiceElementDC2"/>
+                <ContainerPropertyItem value="Midp2ChoiceElementDC3"/>
+                <ContainerPropertyItem value="Midp2ChoiceElementDC4"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="Midp2ChoiceElementDC2" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ChoiceElementDC" uid="90">
+            <Property name="string" value="STRING:Smart"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ChoiceElementDC3" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ChoiceElementDC" uid="91">
+            <Property name="string" value="STRING:Reverse"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ChoiceElementDC4" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ChoiceElementDC" uid="92">
+            <Property name="string" value="STRING:Shuffle"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="choiceGroupTestMode" typeid="MIDP:javax.microedition.lcdui.ChoiceGroup" uid="93">
+            <Property name="label" value="STRING:Testing mode"/>
+            <Property name="choiceType" value="EXCLUSIVE"/>
+            <ContainerProperty name="commands"/>
+            <ContainerProperty name="elements">
+                <ContainerPropertyItem value="Midp2ChoiceElementDC5"/>
+                <ContainerPropertyItem value="Midp2ChoiceElementDC6"/>
+                <ContainerPropertyItem value="Midp2ChoiceElementDC7"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="Midp2ChoiceElementDC5" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ChoiceElementDC" uid="94">
+            <Property name="string" value="STRING:Normal"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ChoiceElementDC6" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ChoiceElementDC" uid="95">
+            <Property name="string" value="STRING:Flashcard"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ChoiceElementDC7" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ChoiceElementDC" uid="96">
+            <Property name="string" value="STRING:T9"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+        </DesignComponent>
+    </DesignDocument>
+    <FlowDocument version="1.1">
+        <Node id="$MobileDevice" location="256,120" order=",$StartPoint,,,,,,,,,$ExitPoint,,,,,"/>
+        <Node id="listFileBrowser" location="152,320" order="$CommandAction8,$CommandAction2,$CommandAction1,$CommandAction3,$CommandAction5,$CommandAction4,,,,,$Default,,,,,"/>
+        <Node id="formBookMenu" location="448,336" order="$CommandAction7,$CommandAction6,,,,,,,,,$Default,,,,,"/>
+        <Node id="listKeyboards" location="120,656" order="$SelectCaseCommandAction1,$SelectCaseCommandAction2,$SelectCaseCommandAction3,$SelectCaseCommandAction4,,$CommandAction9,,,,,$Default,,,,,"/>
+        <Link id="$StartPoint$ActionLink" path="296,96,373,96,373,152,77,152,77,296,112,296"/>
+        <Link id="$CommandAction1$ActionLink" path="192,280,307,280,307,159,143,159,143,96,216,96"/>
+        <Link id="$CommandAction6$ActionLink" path="488,312,540,312,540,403,77,403,77,296,112,296"/>
+        <Link id="$CommandAction8$ActionLink" path="192,312,408,312"/>
+        <Link id="$CommandAction3$ActionLink" path="192,264,295,264,295,370,48,370,48,632,80,632"/>
+        <Link id="$CommandAction9$ActionLink" path="128,584,128,395,77,395,77,296,112,296"/>
+    </FlowDocument>
+</MVDData>
